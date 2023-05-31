@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
+
+#timer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#timer #container {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 40px 0;
+  color: white;
+}
+#timer #container .countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#timer #container .countdown .time {
+  padding: 0 50px;
+}
+#timer #container .countdown .time .day,
+#timer #container .countdown .time .hour,
+#timer #container .countdown .time .minute,
+#timer #container .countdown .time .second {
+  font-size: 48px;
+}/*# sourceMappingURL=style.css.map */

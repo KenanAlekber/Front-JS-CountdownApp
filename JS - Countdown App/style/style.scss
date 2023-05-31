@@ -1,0 +1,50 @@
+@use "../style/utils/variable.scss" as variable;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: variable.$blackColor;
+}
+
+
+h3 {
+    color: variable.$whiteColor;
+    text-align: center;
+}
+
+
+#timer {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #container {
+        border-top: 1px solid variable.$whiteColor;
+        border-bottom: 1px solid variable.$whiteColor;
+        padding: 40px 0;
+        color: variable.$whiteColor;
+
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .time {
+                padding: 0 50px;
+
+                .day,
+                .hour,
+                .minute,
+                .second {
+                    font-size: 48px;
+                }
+            }
+        }
+    }
+}
